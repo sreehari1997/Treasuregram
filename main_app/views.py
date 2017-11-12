@@ -15,7 +15,7 @@ class Treasure:
 
 
 treasures = [
-    Treasure('Gold nuggets', 100, 'gold', 'silicon valley'),
-    Treasure('silver nuggets', 50, 'silver', 'london'),
-    Treasure('coffee gold', 100, 'gold', 'silicon valley')
+    Treasure('Gold nuggets', 100.00, 'gold', 'silicon valley'),
+    Treasure('silver nuggets', 50.00, 'silver', 'london'),
+    Treasure('coffee gold', 0.00, 'gold', 'silicon valley')
 ]
