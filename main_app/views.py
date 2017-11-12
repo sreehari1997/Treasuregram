@@ -3,8 +3,19 @@ from django.shortcuts import render
 
 
 def index(request):
-    name = 'gold_nuggets'
-    value = 1000
-    context = {'treasure_name': name,
-               'treasure_value': value}
-    return render(request, 'index.html', context)
+    return render(request, 'index.html', {'treasures': treasures})
+
+
+class Treasure:
+    def __init__(self, name, value, material, location):
+        self.name = name
+        self.value = value
+        self.material = material
+        self.location = location
+
+
+treasures = [
+    Treasure('Gold nuggets', 100, 'gold', 'silicon valley'),
+    Treasure('silver nuggets', 50, 'silver', 'london'),
+    Treasure('coffee gold', 100, 'gold', 'silicon valley')
+]

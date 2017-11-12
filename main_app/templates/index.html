@@ -5,8 +5,18 @@
 <body>
 <h1>Treasuregram</h1>
 <p>
-    <h3>{{treasure_name}}</h3>
-    <h3>{{treasure_value}}</h3>
+    {% for treasure in treasures %}
+        <br>
+        <br>
+        {{ treasure.name}}
+        <br>
+        {{ treasure.value}}
+        <br>
+        {{ treasure.material}}
+        <br>
+        <br>
+        {{ treasure.location}}
+    {% endfor %}
 </p>
 </body>
 </html>
