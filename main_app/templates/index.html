@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <html>
 <head>
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
     <title>Treasuregram</title>
@@ -16,6 +17,9 @@
 			<h2 class="panel-title">{{ treasure.name}}</h2>
 		</div>
 		<div class="panel-body">
+			<div class="treasure-photo">
+				<center><img src="{{ treasure.image_url }}" height="200"></center>
+			</div>
 			<table class="treasure-table">
 				<tr>
 					<th>
