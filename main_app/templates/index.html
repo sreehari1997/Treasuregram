@@ -18,7 +18,7 @@
 		</div>
 		<div class="panel-body">
 			<div class="treasure-photo">
-				<center><img src="{{ treasure.image_url }}" height="200"></center>
+				<img src="{{ treasure.image_url }}" height="200">
 			</div>
 			<table class="treasure-table">
 				<tr>
@@ -29,9 +29,8 @@
 					<td>
 						{{ treasure.material}}
 					</td>
-
-				</tr>
-				<tr>
+					&nbsp;
+					&nbsp;
 					<th>
 						<img src="{% static 'images/location-icon.png' %}">
 						Location:
@@ -39,9 +38,8 @@
 					<td>
 						{{ treasure.location}}
 					</td>
-
-				</tr>
-				<tr>
+					&nbsp;
+					&nbsp;
 					<th>
 						<img src="{% static 'images/value-icon.png' %}">
 						price:
@@ -55,6 +53,7 @@
 					</td>
 
 				</tr>
+
 			</table>
 
 
